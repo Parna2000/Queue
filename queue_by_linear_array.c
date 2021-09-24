@@ -35,9 +35,12 @@ void enqueue(struct queue *q, int data)
     {
         printf("Queue overflow\n");
     }
-    q->r++;
-    q->arr[q->r] = data;
-    printf("%d is enqueued\n",data);
+    else
+    {
+        q->r++;
+        q->arr[q->r] = data;
+        printf("%d is enqueued\n", data);
+    }
 }
 
 void dequeue(struct queue *q)
