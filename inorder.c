@@ -119,7 +119,7 @@ int main()
     r1->right = r4;
     r2->left = r5;
     r2->right = r6;
-    printf("The preorder traversal of the given tree is:\n");
+    printf("The inorder traversal of the given tree is:\n");
     inOrder(root);
     return 0;
 }
